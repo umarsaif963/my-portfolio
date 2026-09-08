@@ -18,8 +18,10 @@ const projects = [
     href: "https://github.com/umarsaif963/Skill-Swapper",
   },
   {
-    title: "Creative Studio",
-    thumb: "/assets/images/thumbs/portfolio-three-thumb4.jpg",
+    title: "Xtensa",
+    thumb: "/assets/images/thumbs/xtensa.jpeg",
+    tags: ["E-Commerce Website", "Web Application"],
+    href: "https://github.com/umarsaif963/Xtensa",
   },
 ];
 
