@@ -1,7 +1,9 @@
 const projects = [
   {
-    title: "Epic Strategy App",
-    thumb: "/assets/images/thumbs/portfolio-three-thumb1.jpg",
+    title: "Pets Veta",
+    thumb: "/assets/images/thumbs/pets-veta.jpeg",
+    tags: ["Pet Care", "Web Application"],
+    href: "https://github.com/Abdullah7305/Pets-Veta",
   },
   {
     title: "Branding Identity",
@@ -40,7 +42,9 @@ function Portfolio() {
                         <h2 className="tw-text-605 fw-medium tw-mb-4">
                           <a
                             className="hover-text-main-two-600"
-                            href="/"
+                            href={project.href || "/"}
+                            target={project.href ? "_blank" : undefined}
+                            rel={project.href ? "noopener noreferrer" : undefined}
                           >
                             {project.title}
                           </a>
@@ -48,7 +52,7 @@ function Portfolio() {
                       </div>
                       <div className="portfolio-three-list portfolio-list">
                         <ul className="d-flex tw-gap-205 flex-wrap">
-                          {projectTags.map((tag) => (
+                          {(project.tags || projectTags).map((tag) => (
                             <li key={tag}>
                               <a
                                 className="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
@@ -78,7 +82,9 @@ function Portfolio() {
                   >
                     <a
                       className="d-block cursor-hide tw-rounded-lg"
-                      href="/"
+                      href={project.href || "/"}
+                      target={project.href ? "_blank" : undefined}
+                      rel={project.href ? "noopener noreferrer" : undefined}
                     >
                       <img
                         className="w-100 tw-rounded-lg"
