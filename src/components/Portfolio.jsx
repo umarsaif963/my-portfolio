@@ -6,8 +6,10 @@ const projects = [
     href: "https://github.com/Abdullah7305/Pets-Veta",
   },
   {
-    title: "Branding Identity",
-    thumb: "/assets/images/thumbs/portfolio-three-thumb2.jpg",
+    title: "Public Hub",
+    thumb: "/assets/images/thumbs/public-hub.jpeg",
+    tags: ["Social Media", "Web Application"],
+    href: "https://github.com/umarsaif963/publicHub",
   },
   {
     title: "PixelCraft Mobile UI",
