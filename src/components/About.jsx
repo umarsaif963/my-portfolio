@@ -83,12 +83,12 @@ function About() {
                 <span
                   className="purecounter font-heading"
                   data-purecounter-duration="4"
-                  data-purecounter-end="478"
+                  data-purecounter-end="20"
                 ></span>
-                /5
+                +
               </h2>
               <p className="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">
-                Client Satisfaction Rate
+                APIs Integrated
               </p>
             </div>
             <div
@@ -101,12 +101,12 @@ function About() {
                 <span
                   className="purecounter font-heading"
                   data-purecounter-duration="2"
-                  data-purecounter-end="115"
+                  data-purecounter-end="100"
                 ></span>
-                k+
+                %
               </h2>
               <p className="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">
-                In Client revenue growth
+                Responsive Development
               </p>
             </div>
           </div>

@@ -86,7 +86,7 @@ function Banner() {
                   </h3>
                   <div className="banner-three-button">
                     <a
-                      className="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                      className="tw-hover-btn bg-black text-white fw-bold tw-py-3 tw-px-8 tw-text-sm d-inline-block hover-text-white text-uppercase tw-rounded-lg"
                       href="/"
                     >
                       view projects
