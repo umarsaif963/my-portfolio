@@ -12,8 +12,10 @@ const projects = [
     href: "https://github.com/umarsaif963/publicHub",
   },
   {
-    title: "PixelCraft Mobile UI",
-    thumb: "/assets/images/thumbs/portfolio-three-thumb3.jpg",
+    title: "Skill Swapper",
+    thumb: "/assets/images/thumbs/skill-swap.jpeg",
+    tags: ["Peer-to-Peer Learning Platform", "Web Application"],
+    href: "https://github.com/umarsaif963/Skill-Swapper",
   },
   {
     title: "Creative Studio",
