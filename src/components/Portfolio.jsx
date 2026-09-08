@@ -105,7 +105,9 @@ function Portfolio() {
                 <div className="tw-hover-btn-wrapper d-inline-block">
                   <a
                     className="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
-                    href="/"
+                    href="https://github.com/umarsaif963"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="d-flex flex-column justify-content-center">
                       <span className="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold">
