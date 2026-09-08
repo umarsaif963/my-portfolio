@@ -5877,7 +5877,7 @@ input:focus-visible {
 }
 
 .header-three {
-  padding-block: 6px;
+  padding-block: 2px;
 }
 .header-three-logo {
   display: flex;
@@ -5912,6 +5912,7 @@ input:focus-visible {
 
 .header-three .main-menu > nav > ul > li > a {
   color: hsl(var(--heading-color));
+  font-size: 0.875rem;
 }
 .header-three .main-menu > nav > ul > li > a::before {
   color: hsl(var(--heading-color)) !important;
@@ -6317,7 +6318,8 @@ input:focus-visible {
   display: inline-block;
   font-weight: 600;
   color: hsl(var(--white));
-  padding: 38px 0 38px;
+  font-size: 0.875rem;
+  padding: 12px 0 12px;
   position: relative;
 }
 .main-menu > nav > ul > li > a.color-active {
