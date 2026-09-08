@@ -105,12 +105,12 @@ function Banner() {
                       <span
                         className="purecounter font-heading"
                         data-purecounter-duration="2"
-                        data-purecounter-end="98"
+                        data-purecounter-end="5"
                       ></span>
-                      %
+                      +
                     </h4>
                     <p className="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">
-                      Client Satisfaction Rate
+                      Projects Built
                     </p>
                   </div>
                   <div className="banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black">
@@ -118,55 +118,38 @@ function Banner() {
                       <span
                         className="purecounter font-heading"
                         data-purecounter-duration="4"
-                        data-purecounter-end="70"
+                        data-purecounter-end="4"
                       ></span>
                       +
                     </h4>
                     <p className="banner-three-counter-paragraph tw-text-lg fw-medium text-white">
-                      Projects Launched
+                      Full-Stack Applications
                     </p>
                   </div>
                   <div className="banner-three-counter-item tw-rounded-md tw-mb-4">
-                    <div className="d-flex align-items-center tw-mb-2">
-                      <div className="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-1 border border-2 border-white">
-                        <img
-                          src="/assets/images/thumbs/team-img1.png"
-                          alt="Client Image"
-                          className="w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                      <div className="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-2 tw--ms-16-px z-1 border border-2 border-white">
-                        <img
-                          src="/assets/images/thumbs/team-img2.png"
-                          alt="Client Image"
-                          className="w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                      <div className="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white">
-                        <img
-                          src="/assets/images/thumbs/team-img3.png"
-                          alt="Client Image"
-                          className="w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                      <div className="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white">
-                        <img
-                          src="/assets/images/thumbs/team-img4.png"
-                          alt="Client Image"
-                          className="w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                    </div>
                     <h4 className="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1">
                       <span
                         className="purecounter font-heading"
                         data-purecounter-duration="3"
-                        data-purecounter-end="96"
+                        data-purecounter-end="10"
                       ></span>
                       +
                     </h4>
                     <p className="banner-three-counter-paragraph tw-text-lg fw-medium text-heading">
-                      Global Clients and Growing
+                      Technologies &amp; Tools
+                    </p>
+                  </div>
+                  <div className="banner-three-counter-item tw-rounded-md tw-mb-4 ms-auto bg-black">
+                    <h4 className="banner-three-counter-title tw-text-101 fw-semibold font-heading text-white tw-mb-2 lh-1">
+                      <span
+                        className="purecounter font-heading"
+                        data-purecounter-duration="4"
+                        data-purecounter-end="100"
+                      ></span>
+                      %
+                    </h4>
+                    <p className="banner-three-counter-paragraph tw-text-lg fw-medium text-white">
+                      Commitment to Quality
                     </p>
                   </div>
                 </div>
