@@ -1,4 +1,34 @@
+import { useEffect } from "react";
+
+function scrollToY(y) {
+  const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+  if (smoother) {
+    smoother.scrollTo(y, true);
+  } else {
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+}
+
 function Header() {
+  useEffect(() => {
+    const onClick = (e) => {
+      const anchor = e.target.closest('a[href^="#"]');
+      if (!anchor) return;
+      const id = anchor.getAttribute("href").slice(1);
+      const el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      if (id === "home") {
+        scrollToY(0);
+        return;
+      }
+      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+      scrollToY(y);
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+
   return (
     <header
       className="header header-two header-three tw-transition-all tw-z-99 position-relative"
@@ -20,7 +50,7 @@ function Header() {
               <nav className="tw-main-menu-content">
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <a href="#home">Home</a>
                   </li>
                   <li>
                     <a href="#about">About</a>
