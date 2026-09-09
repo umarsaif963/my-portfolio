@@ -9,10 +9,10 @@ import About from "./components/About";
 import Marquee from "./components/Marquee";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import WhyWork from "./components/WhyWork";
 import CtaBanner from "./components/CtaBanner";
-import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import useTemplateScripts from "./hooks/useTemplateScripts";
@@ -35,7 +35,7 @@ function App() {
           <Marquee />
           <Services />
           <Portfolio />
-          <Features />
+          <Experience />
           <Skills />
           <WhyWork />
           <CtaBanner />
