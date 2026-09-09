@@ -112,13 +112,6 @@ function About() {
           </div>
         </div>
       </div>
-      <div>
-        <img
-          className="about-three-shape position-absolute start-0 w-100"
-          src="/assets/images/shapes/about-three-shape.png"
-          alt="shape"
-        />
-      </div>
     </section>
   );
 }

@@ -1,39 +1,41 @@
 const services = [
   {
     number: "01",
-    title: "Illustration Design",
+    title: "Frontend Engineering",
     thumb: "/assets/images/thumbs/service-three-thumb1.png",
+    tags: ["React & TypeScript", "Modern UI Development", "Responsive Experiences"],
     align: "",
     aos: "fade-right",
     delay: "200",
   },
   {
     number: "02",
-    title: "Business Branding",
+    title: "Backend Engineering",
     thumb: "/assets/images/thumbs/service-three-thumb2.png",
+    tags: ["Node.js & Express", "RESTful APIs", "Secure Authentication"],
     align: "ms-auto",
     aos: "fade-left",
     delay: "300",
   },
   {
     number: "03",
-    title: "Web Development",
+    title: "Full-Stack Solutions",
     thumb: "/assets/images/thumbs/service-three-thumb3.png",
+    tags: ["MERN Stack Development", "Database Architecture", "API Integration"],
     align: "",
     aos: "fade-right",
     delay: "400",
   },
   {
     number: "04",
-    title: "Application Design",
+    title: "Scalable Web Apps",
     thumb: "/assets/images/thumbs/service-three-thumb4.png",
+    tags: ["Custom Web Applications", "Real-Time Functionality", "Deployment & Optimization"],
     align: "ms-auto",
     aos: "fade-left",
     delay: "500",
   },
 ];
-
-const tags = ["Creative Direction", "Brand Identity", "Graphic Design"];
 
 function Services() {
   return (
@@ -70,7 +72,7 @@ function Services() {
                         </div>
                         <div className="portfolio-list portfolio-two-list">
                           <ul className="d-flex tw-gap-205 flex-wrap">
-                            {tags.map((tag) => (
+                            {service.tags.map((tag) => (
                               <li key={tag}>
                                 <a
                                   className="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
