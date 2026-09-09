@@ -59,31 +59,29 @@ function Contact() {
                       <li>
                         <a
                           className="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                          href="https://www.facebook.com"
+                          href="https://github.com/umarsaif963"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="ph ph-facebook-logo"></i>
+                          <i className="ph ph-github-logo"></i>
                         </a>
                       </li>
                       <li>
                         <a
                           className="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                          href="https://www.x.com"
+                          href="https://www.linkedin.com/in/muhammad-umar-saif-dev"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="ph ph-x-logo"></i>
+                          <i className="ph ph-linkedin-logo"></i>
                         </a>
                       </li>
                       <li>
                         <a
                           className="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                          href="https://www.instagram.com"
-                          target="_blank"
-                          rel="noreferrer"
+                          href="mailto:umarsaif.dev@gmail.com"
                         >
-                          <i className="ph ph-instagram-logo"></i>
+                          <i className="ph ph-envelope-simple"></i>
                         </a>
                       </li>
                     </ul>
