@@ -6262,16 +6262,6 @@ input:focus-visible {
     align-items: flex-start;
   }
 }
-.about-three-title {
-  font-size: clamp(1.1rem, 0.8rem + 1.5vw, 2.5rem);
-  line-height: 1.4;
-}
-@media screen and (max-width: 575px) {
-  .about-three-title {
-    font-size: 0.7rem;
-    line-height: 1.6;
-  }
-}
 .footer-three-border {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);

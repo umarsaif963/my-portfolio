@@ -7,12 +7,16 @@ function About() {
             <div className="col-xl-9">
               <div className="text-center">
                 <h2 className="about-three-title text-heading tw-text-10 tw-itm-title tw-itm-anim">
-                  I’m dedicated to turning ideas into impactful digital solutions by building modern, scalable, and user-focused web applications.
+                  <span className="d-none d-md-inline">
+                    I&#x2019;m dedicated to turning ideas into impactful digital solutions by building modern, scalable, and user-focused web applications.
 
-                  With a strong focus on React, Node.js, and modern web technologies, I create seamless digital experiences that combine clean design with powerful functionality.
+                    With a strong focus on React, Node.js, and modern web technologies, I create seamless digital experiences that combine clean design with powerful functionality.
 
-                  Explore my work and see what I’ve built.
-
+                    Explore my work and see what I&#x2019;ve built.
+                  </span>
+                  <span className="d-md-none">
+                    I build modern, scalable, and user-focused web applications using React, Node.js, and modern web technologies.
+                  </span>
                 </h2>
               </div>
             </div>
@@ -42,10 +46,10 @@ function About() {
               >
                 <div>
                   <p className="tw-text-base tw-mb-10">
-                    I&rsquo;m a passionate MERN Stack Developer focused on building modern, user-centered web applications that combine clean design with powerful functionality. I use MongoDB, Express.js, React, and Node.js to create websites and full-stack applications that are fast, responsive, scalable, and easy to maintain.
+                    I&#x2019;m a passionate MERN Stack Developer focused on building modern, user-centered web applications that combine clean design with powerful functionality. I use MongoDB, Express.js, React, and Node.js to create websites and full-stack applications that are fast, responsive, scalable, and easy to maintain.
                   </p>
                   <p className="tw-text-base tw-mb-10">
-                    With a strong eye for UI/UX and a solid foundation in web development, I transform complex ideas into simple, intuitive digital solutions. I believe great development is more than just writing code—it’s about creating meaningful experiences where every component, interaction, and line of code serves a purpose.
+                    With a strong eye for UI/UX and a solid foundation in web development, I transform complex ideas into simple, intuitive digital solutions. I believe great development is more than just writing code&#x2014;it&#x2019;s about creating meaningful experiences where every component, interaction, and line of code serves a purpose.
                   </p>
                   <p className="tw-text-base tw-mb-10">
                     From concept to deployment, I enjoy turning ideas into real-world products. I focus on understanding business goals, solving problems efficiently, and building applications with clean architecture, reusable components, secure APIs, and reliable performance. My goal is to create digital products that not only look great but also deliver real value to users and businesses.
