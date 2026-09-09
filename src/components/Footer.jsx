@@ -136,13 +136,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div>
-        <img
-          className="position-absolute top-0 start-0 z-n1"
-          src="/assets/images/shapes/footer-three-bg-shape.png"
-          alt="shape"
-        />
-      </div>
     </footer>
   );
 }

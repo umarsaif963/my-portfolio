@@ -10697,8 +10697,11 @@ body.tw-magic-cursor #magic-cursor {
 }
 
 /* ========== Professional Footer ========== */
+footer.footer-three-area {
+  background: #000000;
+}
 .footer-top {
-  padding-block-end: 44px;
+  padding-block-end: 30px;
   border-block-end: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-top-cta-title {
@@ -10796,7 +10799,7 @@ body.tw-magic-cursor #magic-cursor {
 }
 .footer-bottom {
   border-block-start: 1px solid rgba(255, 255, 255, 0.1);
-  padding-block: 26px;
+  padding-block: 20px;
 }
 .footer-bottom-inner {
   gap: 12px;
@@ -10809,17 +10812,20 @@ body.tw-magic-cursor #magic-cursor {
   color: var(--main-two-600);
   margin-inline-end: 6px;
 }
+.footer-main {
+  padding-block: 70px;
+}
 @media screen and (max-width: 991px) {
   .footer-brand {
     margin-block-end: 40px;
   }
   .footer-main {
-    padding-block: 100px;
+    padding-block: 60px;
   }
 }
 @media screen and (max-width: 767px) {
   .footer-main {
-    padding-block: 80px;
+    padding-block: 50px;
   }
   .footer-top-cta {
     align-items: flex-start;
