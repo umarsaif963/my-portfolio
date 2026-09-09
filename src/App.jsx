@@ -13,6 +13,7 @@ import Skills from "./components/Skills";
 import WhyWork from "./components/WhyWork";
 import CtaBanner from "./components/CtaBanner";
 import Features from "./components/Features";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import useTemplateScripts from "./hooks/useTemplateScripts";
 
@@ -38,6 +39,7 @@ function App() {
           <Skills />
           <WhyWork />
           <CtaBanner />
+          <Contact />
           <Footer />
         </div>
       </div>
