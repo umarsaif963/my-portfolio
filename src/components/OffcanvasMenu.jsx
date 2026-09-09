@@ -1,4 +1,43 @@
+import { useEffect } from "react";
+
+function scrollToY(y) {
+  const smoother = window.ScrollSmoother && window.ScrollSmoother.get();
+  if (smoother) {
+    smoother.scrollTo(y, true);
+  } else {
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+}
+
+function closeOffcanvas() {
+  document.querySelector(".tw-offcanvas-2-area")?.classList.remove("opened");
+  document.querySelector(".body-overlay")?.classList.remove("apply");
+}
+
 function OffcanvasMenu() {
+  useEffect(() => {
+    const onClick = (e) => {
+      const anchor = e.target.closest(".tw-offcanvas-2-left a[href^='#']");
+      if (!anchor) return;
+      e.preventDefault();
+      const id = anchor.getAttribute("href").slice(1);
+      const el = document.getElementById(id);
+      closeOffcanvas();
+      if (id === "home") {
+        setTimeout(() => scrollToY(0), 300);
+        return;
+      }
+      if (el) {
+        setTimeout(() => {
+          const y = el.getBoundingClientRect().top + window.scrollY - 80;
+          scrollToY(y);
+        }, 300);
+      }
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+
   return (
     <div className="tw-offcanvas-2-area p-relative">
       <div className="tw-offcanvas-2-bg is-left left-box"></div>
@@ -12,7 +51,7 @@ function OffcanvasMenu() {
               </a>
             </div>
             <div className="tw-offcanvas-2-close d-md-none text-end">
-              <button className="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
+              <button className="tw-offcanvas-2-close-btn">
                 <span className="text">
                   <span className="text-white">close</span>
                 </span>
@@ -82,80 +121,6 @@ function OffcanvasMenu() {
             </button>
           </div>
           <div className="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100">
-            <div className="twoffcanvas__contact-info">
-              <div className="twoffcanvas__contact-title">
-                <h5 className="text-white">Contact us</h5>
-              </div>
-              <ul>
-                <li>
-                  <span className="text-main-two-600 tw-text-xl">
-                    <i className="ph ph-map-pin-line"></i>
-                  </span>
-                  <a
-                    className="text-white"
-                    href="https://www.google.com/maps/@23.8223586,90.3661283,15z"
-                    target="_blank"
-                  >
-                    Manchester 21, Zurich, CH
-                  </a>
-                </li>
-                <li>
-                  <span className="text-main-two-600 tw-text-xl">
-                    <i className="ph ph-envelope"></i>
-                  </span>
-                  <a className="text-white" href="mailto:umarsaif.dev@gmail.com">
-                    umarsaif.dev@gmail.com
-                  </a>
-                </li>
-                <li>
-                  <span className="text-main-two-600 tw-text-xl">
-                    <i className="ph ph-phone-call"></i>
-                  </span>
-                  <a className="text-white" href="tel:+48555223224">
-                    (+00) 678 345 98568
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div
-              className="footer-social"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              <ul className="tw-gap-2">
-                <li>
-                  <a href="#">
-                    <span className="active-media d-flex align-items-center tw-gap-1">
-                      Facebook <i className="ph ph-arrow-bend-up-right"></i>
-                    </span>
-                    <span className="hover-media">
-                      <i className="ph ph-facebook-logo"></i>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span className="active-media d-flex align-items-center tw-gap-1">
-                      INSTAGRAM <i className="ph ph-arrow-bend-up-right"></i>
-                    </span>
-                    <span className="hover-media">
-                      <i className="ph ph-instagram-logo"></i>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span className="active-media d-flex align-items-center tw-gap-1">
-                      LINKEDIN <i className="ph ph-arrow-bend-up-right"></i>
-                    </span>
-                    <span className="hover-media">
-                      <i className="ph ph-linkedin-logo"></i>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
