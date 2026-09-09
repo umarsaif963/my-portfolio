@@ -10125,6 +10125,9 @@ body.tw-magic-cursor #magic-cursor {
 }
 
 /* ========== Technical Skills ========== */
+.skills-three-area {
+  background: #f5f5f5;
+}
 .skills-three-heading {
   max-width: 760px;
 }
@@ -10133,57 +10136,32 @@ body.tw-magic-cursor #magic-cursor {
   box-shadow:
     0 4px 4px 0 rgba(0, 0, 0, 0.25),
     -4px -4px 0 0 rgba(255, 255, 255, 0.25);
-  border-radius: 16px;
-  padding: 26px;
-  height: 100%;
+  border-radius: 0.5rem;
+  padding: 30px;
+  padding-block-start: 38px;
+  aspect-ratio: 16 / 9;
   transition: 0.4s;
 }
 .skills-category-icon {
   width: 48px;
   height: 48px;
   background: var(--main-two-600);
-  border-radius: 12px;
-  flex-shrink: 0;
+  border-radius: 50%;
 }
 .skills-category-icon i {
   font-size: 1.6rem;
   line-height: 1;
 }
-.skill-chip {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 999px;
-  padding: 5px 14px 5px 5px;
-  gap: 10px;
+.skill-badge {
+  height: 28px;
+  width: auto;
+  border-radius: 8px;
+  vertical-align: middle;
   transition: 0.3s;
 }
-.skill-chip:hover {
-  transform: translateY(-4px);
-  border-color: var(--main-two-600);
-  box-shadow: 0 10px 24px -12px rgba(0, 0, 0, 0.3);
-}
-.skill-chip-icon {
-  width: 36px;
-  height: 36px;
-  background: #e9e9e9;
-  border-radius: 50%;
-  flex-shrink: 0;
-  transition: 0.3s;
-}
-.skill-chip-icon i {
-  font-size: 1.25rem;
-  line-height: 1;
-}
-.skill-chip-name {
-  transition: 0.3s;
-}
-.skill-chip:hover .skill-chip-icon {
-  background: var(--main-two-600);
-  color: #ffffff;
-  transform: scale(1.12);
-}
-.skill-chip:hover .skill-chip-name {
-  color: var(--main-two-600);
+.skill-badge:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.35);
 }
 @media screen and (max-width: 575px) {
   .skills-category {
