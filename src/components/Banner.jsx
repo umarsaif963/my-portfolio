@@ -84,13 +84,21 @@ function Banner() {
                   <h3 className="banner-three-center-title tw-text-120">
                     Design, branding and web development made better.
                   </h3>
-                  <div className="banner-three-button">
+                  <div className="banner-three-button d-flex tw-gap-4 justify-content-center flex-wrap">
                     <a
                       className="tw-hover-btn bg-black text-white fw-bold tw-py-3 tw-px-8 tw-text-sm d-inline-block hover-text-white text-uppercase tw-rounded-lg"
-                      href="/"
+                      href="#projects"
                     >
                       view projects
                       <span className="tw-hover-btn-circle-dot bg-main-two-600"></span>
+                    </a>
+                    <a
+                      className="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-3 tw-px-8 tw-text-sm d-inline-block hover-text-white text-uppercase tw-rounded-lg d-md-none"
+                      href="/assets/images/thumbs/Muhammad_Umar_Saif_MERN.pdf"
+                      download="Muhammad_Umar_Saif_CV.pdf"
+                    >
+                      download cv
+                      <span className="tw-hover-btn-circle-dot bg-black"></span>
                     </a>
                   </div>
                 </div>
