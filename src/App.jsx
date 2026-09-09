@@ -10,6 +10,7 @@ import Marquee from "./components/Marquee";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import WhyWork from "./components/WhyWork";
 import Features from "./components/Features";
 import Testimonials from "./components/Testimonials";
 import Brands from "./components/Brands";
@@ -36,6 +37,7 @@ function App() {
           <Portfolio />
           <Features />
           <Skills />
+          <WhyWork />
           <Testimonials />
           <Brands />
           <Footer />

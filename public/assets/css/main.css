@@ -10169,4 +10169,148 @@ body.tw-magic-cursor #magic-cursor {
   }
 }
 
+/* ========== Why Work With Me ========== */
+.why-work-three-area {
+  background: #010406;
+}
+.why-work-three-intro {
+  margin-inline-start: 40px;
+  position: sticky;
+  top: 120px;
+}
+.why-work-three-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--main-two-600);
+  letter-spacing: 4px;
+  font-size: 0.875rem;
+}
+.why-work-three-label::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: var(--main-two-600);
+  opacity: 0.6;
+}
+.why-work-three-title {
+  color: #ffffff;
+  font-size: clamp(2.25rem, 1.4rem + 2.6vw, 4rem);
+  line-height: 1.04;
+  margin: 24px 0 22px;
+}
+.why-work-three-intro-paragraph {
+  color: #b6b8bd;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+.why-work-three-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding-block: 40px;
+  border-block-start: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+.why-work-three-item:last-child {
+  border-block-end: 1px solid rgba(255, 255, 255, 0.1);
+}
+.why-work-three-item:hover {
+  padding-inline-start: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-block-start-color: rgba(255, 255, 255, 0.18);
+}
+.why-work-three-number {
+  min-width: 56px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding-block-start: 6px;
+  transition: 0.4s;
+}
+.why-work-three-item:hover .why-work-three-number {
+  color: var(--main-two-600);
+}
+.why-work-three-icon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: 0.4s;
+}
+.why-work-three-item:hover .why-work-three-icon {
+  background: var(--main-two-600);
+  border-color: var(--main-two-600);
+  transform: translateY(-3px);
+}
+.why-work-three-item-title {
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.9rem + 0.9vw, 1.65rem);
+  margin: 0 0 10px;
+  transition: 0.3s;
+}
+.why-work-three-item:hover .why-work-three-item-title {
+  color: var(--main-two-600);
+}
+.why-work-three-item-text {
+  color: #b6b8bd;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 640px;
+}
+@media screen and (max-width: 1199px) {
+  .why-work-three-intro {
+    position: static;
+  }
+  .why-work-three-item {
+    gap: 22px;
+    padding-block: 34px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .why-work-three-intro {
+    margin-bottom: 60px;
+  }
+  .why-work-three-title {
+    margin: 20px 0 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .why-work-three-item {
+    gap: 18px;
+    padding-block: 30px;
+  }
+  .why-work-three-number {
+    min-width: 44px;
+    font-size: 1.1rem;
+  }
+  .why-work-three-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .why-work-three-intro {
+    margin-inline-start: 20px;
+    margin-bottom: 40px;
+  }
+  .why-work-three-item {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .why-work-three-number {
+    min-width: 40px;
+  }
+  .why-work-three-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
