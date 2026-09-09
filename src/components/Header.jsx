@@ -65,7 +65,7 @@ function Header() {
                     <a href="#skills">Skills</a>
                   </li>
                   <li>
-                    <a href="/">Experience</a>
+                    <a href="#experience">Experience</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
@@ -93,7 +93,8 @@ function Header() {
             <div className="header-three-button d-none d-md-block">
               <a
                 className="tw-hover-btn bg-black text-white fw-bold tw-py-3 tw-px-8 tw-text-sm d-inline-block hover-text-white text-uppercase tw-rounded-md"
-                href="/"
+                href="/assets/images/thumbs/Muhammad_Umar_Saif_MERN.pdf"
+                download="Muhammad_Umar_Saif_CV.pdf"
               >
                 download cv
                 <span className="tw-hover-btn-circle-dot bg-main-two-600"></span>

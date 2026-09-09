@@ -103,8 +103,8 @@ function OffcanvasMenu() {
                   <span className="text-main-two-600 tw-text-xl">
                     <i className="ph ph-envelope"></i>
                   </span>
-                  <a className="text-white" href="mailto:techubinfo@mail.com">
-                    <span className="__cf_email__">omioinfo@mail.com</span>
+                  <a className="text-white" href="mailto:umarsaif.dev@gmail.com">
+                    umarsaif.dev@gmail.com
                   </a>
                 </li>
                 <li>

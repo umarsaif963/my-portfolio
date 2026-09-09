@@ -101,12 +101,9 @@ function Footer() {
                     <li key={social.label}>
                       <a
                         href={social.href}
-                        target={
-                          social.href.startsWith("mailto:")
-                            ? undefined
-                            : "_blank"
-                        }
-                        rel="noreferrer"
+                        {...(social.href.startsWith("mailto:")
+                          ? {}
+                          : { target: "_blank", rel: "noreferrer" })}
                       >
                         <span className="footer-social-icon d-inline-flex align-items-center justify-content-center">
                           <i className={social.icon}></i>
