@@ -10317,6 +10317,7 @@ body.tw-magic-cursor #magic-cursor {
 .cta-three-area {
   background: var(--main-two-600);
   padding-block: 130px;
+  padding-inline: 40px;
 }
 .cta-three-label {
   display: inline-flex;
@@ -10498,6 +10499,7 @@ body.tw-magic-cursor #magic-cursor {
 @media screen and (max-width: 575px) {
   .cta-three-area {
     padding-block: 80px;
+    padding-inline: 20px;
   }
   .cta-three-build {
     font-size: clamp(3rem, 2rem + 10vw, 6rem);
