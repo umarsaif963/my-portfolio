@@ -10313,4 +10313,198 @@ body.tw-magic-cursor #magic-cursor {
   }
 }
 
+/* ========== CTA Banner ========== */
+.cta-three-area {
+  background: var(--main-two-600);
+  padding-block: 130px;
+}
+.cta-three-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #010406;
+  letter-spacing: 4px;
+  font-size: 0.875rem;
+}
+.cta-three-label::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #010406;
+  opacity: 0.7;
+}
+.cta-three-title {
+  color: #010406;
+  font-size: clamp(2.5rem, 1.6rem + 4vw, 5.5rem);
+  line-height: 1.02;
+  letter-spacing: -1px;
+  margin: 22px 0 20px;
+}
+.cta-three-paragraph {
+  color: #010406;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 0 36px;
+  max-width: 520px;
+  opacity: 0.85;
+}
+.cta-three-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  transition: 0.35s;
+}
+.cta-three-btn-solid {
+  background: #010406;
+  color: #ffffff;
+}
+.cta-three-btn-solid:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px -14px rgba(0, 0, 0, 0.45);
+}
+.cta-three-btn-outline {
+  border: 1.5px solid #010406;
+  background: transparent;
+  color: #010406;
+}
+.cta-three-btn-outline:hover {
+  background: #010406;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+.cta-three-visual {
+  position: relative;
+  min-height: 420px;
+}
+.cta-three-build {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: clamp(4rem, 3rem + 8vw, 11rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px #010406;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.cta-three-code {
+  position: absolute;
+  top: 6%;
+  inset-inline-start: 4%;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.4rem);
+  color: #010406;
+}
+.cta-three-brackets {
+  position: absolute;
+  bottom: 10%;
+  inset-inline-end: 8%;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+  color: #ffffff;
+}
+.cta-three-block {
+  position: absolute;
+  top: 18%;
+  inset-inline-end: 14%;
+  background: rgba(1, 4, 6, 0.92);
+  border-radius: 14px;
+  padding: 18px 20px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.cta-three-block i {
+  display: block;
+  height: 7px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.cta-three-block i:nth-child(1) {
+  width: 80%;
+}
+.cta-three-block i:nth-child(2) {
+  width: 55%;
+  background: rgba(255, 255, 255, 0.55);
+}
+.cta-three-block i:nth-child(3) {
+  width: 70%;
+  background: rgba(255, 255, 255, 0.55);
+}
+.cta-three-float-1 {
+  animation: cta-float 5s ease-in-out infinite alternate;
+}
+.cta-three-float-2 {
+  animation: cta-float 7s ease-in-out infinite alternate;
+  animation-delay: 0.8s;
+}
+.cta-three-float-3 {
+  animation: cta-float 6s ease-in-out infinite alternate;
+  animation-delay: 1.4s;
+}
+@keyframes cta-float {
+  from {
+    transform: translateY(-6px);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cta-three-area {
+    padding-block: 100px;
+  }
+  .cta-three-visual {
+    min-height: 360px;
+  }
+  .cta-three-build {
+    font-size: clamp(3.5rem, 2.5rem + 6vw, 8rem);
+  }
+}
+@media screen and (max-width: 991px) {
+  .cta-three-visual {
+    margin-block-start: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cta-three-visual {
+    min-height: 300px;
+    margin-block-start: 40px;
+  }
+  .cta-three-block {
+    display: none;
+  }
+  .cta-three-paragraph {
+    margin-bottom: 28px;
+    font-size: 1.125rem;
+  }
+  .cta-three-btn {
+    padding: 12px 26px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .cta-three-area {
+    padding-block: 80px;
+  }
+  .cta-three-build {
+    font-size: clamp(3rem, 2rem + 10vw, 6rem);
+  }
+  .cta-three-brackets {
+    inset-inline-end: 4%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

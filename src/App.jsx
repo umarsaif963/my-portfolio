@@ -11,9 +11,8 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import WhyWork from "./components/WhyWork";
+import CtaBanner from "./components/CtaBanner";
 import Features from "./components/Features";
-import Testimonials from "./components/Testimonials";
-import Brands from "./components/Brands";
 import Footer from "./components/Footer";
 import useTemplateScripts from "./hooks/useTemplateScripts";
 
@@ -38,8 +37,7 @@ function App() {
           <Features />
           <Skills />
           <WhyWork />
-          <Testimonials />
-          <Brands />
+          <CtaBanner />
           <Footer />
         </div>
       </div>
