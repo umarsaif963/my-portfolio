@@ -10870,6 +10870,9 @@ footer.footer-three-area {
     padding: 8px 16px;
     font-size: 0.75rem;
   }
+  .about-three-title {
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem) !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
