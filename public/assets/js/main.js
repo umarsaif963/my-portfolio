@@ -294,5 +294,29 @@
     }
 
     initRipples();
+
+    // Pull to refresh on mobile
+    (function () {
+      if (!("ontouchstart" in window)) return;
+      var startY = 0;
+      var pulling = false;
+      document.addEventListener("touchstart", function (e) {
+        if (window.scrollY === 0) {
+          startY = e.touches[0].pageY;
+          pulling = true;
+        }
+      });
+      document.addEventListener("touchmove", function (e) {
+        if (!pulling) return;
+        var diff = e.touches[0].pageY - startY;
+        if (diff > 100) {
+          pulling = false;
+          window.location.reload();
+        }
+      });
+      document.addEventListener("touchend", function () {
+        pulling = false;
+      });
+    })();
   });
 })(jQuery);
