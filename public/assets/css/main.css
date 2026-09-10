@@ -7611,6 +7611,13 @@ body.tw-magic-cursor #magic-cursor {
   visibility: hidden;
   padding: 0 5px;
   line-height: 1.1;
+}
+@media screen and (max-width: 991px) {
+  #magic-cursor,
+  #ball {
+    display: none !important;
+  }
+}
   text-align: center;
   transform: scale(0);
   font-weight: 600;
