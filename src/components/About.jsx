@@ -7,7 +7,7 @@ function About() {
             <div className="col-xl-9">
               <div className="text-center">
                 <h2 className="about-three-title text-heading tw-text-10 tw-itm-title tw-itm-anim">
-                  I&#x2019;m dedicated to turning ideas into impactful digital solutions by building modern, scalable, and user-focused web applications. With a strong focus on React, Node.js, and modern web technologies, I create seamless digital experiences that combine clean design with powerful functionality. Explore my work and see what I&#x2019;ve built.
+                  I build modern, scalable, and user-focused web applications using React, Node.js, and modern web technologies.
                 </h2>
               </div>
             </div>
