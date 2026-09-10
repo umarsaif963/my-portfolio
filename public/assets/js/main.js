@@ -295,27 +295,57 @@
 
     initRipples();
 
-    // Pull to refresh on mobile
+    // Pull to refresh on mobile (Chrome-style)
     (function () {
       if (!("ontouchstart" in window)) return;
       var startY = 0;
       var pulling = false;
+
+      var loader = document.createElement("div");
+      loader.id = "pull-to-refresh";
+      loader.innerHTML = '<svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke="#e95320" stroke-width="3" stroke-linecap="round" stroke-dasharray="90 150" stroke-dashoffset="0"/></svg>';
+      document.body.appendChild(loader);
+
+      var circle = loader.querySelector("circle");
+
       document.addEventListener("touchstart", function (e) {
-        if (window.scrollY === 0) {
+        if (window.scrollY <= 0) {
           startY = e.touches[0].pageY;
           pulling = true;
+          loader.classList.remove("active");
+          loader.classList.remove("refreshing");
         }
-      });
+      }, { passive: true });
+
       document.addEventListener("touchmove", function (e) {
         if (!pulling) return;
         var diff = e.touches[0].pageY - startY;
-        if (diff > 100) {
-          pulling = false;
-          window.location.reload();
+        if (diff > 0 && window.scrollY <= 0) {
+          var progress = Math.min(diff / 120, 1);
+          loader.style.opacity = progress;
+          loader.style.transform = "translateY(" + (diff * 0.5) + "px) scale(" + (0.5 + progress * 0.5) + ")";
+          circle.style.strokeDashoffset = 150 - (progress * 150);
+          loader.classList.add("active");
         }
-      });
+      }, { passive: true });
+
       document.addEventListener("touchend", function () {
+        if (!pulling) return;
         pulling = false;
+        if (loader.classList.contains("active")) {
+          var opacity = parseFloat(loader.style.opacity || 0);
+          if (opacity >= 1) {
+            loader.classList.add("refreshing");
+            circle.style.animation = "ptr-spin 0.6s linear infinite";
+            loader.style.opacity = 1;
+            loader.style.transform = "translateY(30px) scale(1)";
+            setTimeout(function () { window.location.reload(); }, 800);
+          } else {
+            loader.classList.remove("active");
+            loader.style.opacity = 0;
+            loader.style.transform = "translateY(0) scale(0.5)";
+          }
+        }
       });
     })();
   });
